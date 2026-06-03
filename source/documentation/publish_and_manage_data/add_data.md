@@ -1,6 +1,6 @@
 # Add datasets manually
 
-If you do not want to [automatically harvest datasets](../harvest_data), you can add a dataset to the data.gov.uk directory manually.
+If you do not want to [automatically harvest datasets](../harvest_data), you can add a dataset to the National Data Library directory manually.
 
 >You cannot use the form for publishing INSPIRE/Location data. See the guidance on [harvesting INSPIRE data](../inspire) for more information.
 
@@ -28,7 +28,7 @@ Once you have added information about the dataset, you can add the data itself.
 
 Organograms are a description of the roles and salaries in the UK government at a particular point in time. They are an important publication in the government's effort to improve transparency of how the public sector manages resources.
 
-Central government and agencies must publish organograms of all staff positions on the data.gov.uk directory every 3 months. Organograms are published:
+Central government and agencies must publish organograms of all staff positions on the directory every 3 months. Organograms are published:
 
 * in a [collection of visualisations](https://data.gov.uk/search?q=organogram)
 * as raw data in CSV format
@@ -89,7 +89,7 @@ The new organogram will be added to the existing dataset.
 
 ## Add spend data
 
-Central and local government bodies (including NHS) must publish the details of their expenditure transactions every month. This guidance explains how to add these details to the data.gov.uk directory.
+Central and local government bodies (including NHS) must publish the details of their expenditure transactions every month. This guidance explains how to add these details to the directory.
 
 ### About spend data
 
