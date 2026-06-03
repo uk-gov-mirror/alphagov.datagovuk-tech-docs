@@ -1,10 +1,10 @@
-# data.gov.uk technical documentation
+# National Data Library technical documentation
 
-Data.gov.uk helps people find and use open government data.
+The National Data Library on data.gov.uk helps people find and use open government data.
 
 Follow this guidance to:
 
-* [publish and manage datasets](publish_and_manage_data/) on data.gov.uk
-* [get data](get_data/) from data.gov.uk using an API
+* [publish and manage datasets](publish_and_manage_data/) on the National Data Library
+* [get data](get_data/) from the National Data Library using an API
 
-If you can’t find what you’re looking for, [contact data.gov.uk support](https://data.gov.uk/support).
+If you can’t find what you’re looking for, [contact the National Data Library support](https://data.gov.uk/support).
