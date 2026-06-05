@@ -108,7 +108,7 @@
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading" data-module="collapsible-navigation">
                       <ul>
   <li>
-    <a href="/"><span>data.gov.uk technical documentation</span></a>
+    <a href="/"><span>National Data Library technical documentation</span></a>
   </li>
 <li><a href="/publish_and_manage_data/"><span>Publish and manage data</span></a>
 <ul>
@@ -207,7 +207,7 @@
         </table>
       </div><p>Local authorities should make use of the detailed guidance from the Local Government Association which lists datasets likely to be held by LAs covered by INSPIRE: <a href="https://www.local.gov.uk/sites/default/files/documents/guide-inspire-compliance--8fe.docx">A Guide to INSPIRE compliance in local government (.docx file)</a>.</p>
 <h2 id="publishing-inspire-location-data">Publishing INSPIRE/Location data</h2>
-<p>The INSPIRE legislation requires most geo-spatial data to be published according to certain standards, and be registered on data.gov.uk in a certain way. The records must be published in <a href="../harvest_data/gemini">GEMINI format</a> and be <a href="../harvest_data">harvested</a>. Common ways to do this are:</p></p>
+<p>The INSPIRE legislation requires most geo-spatial data to be published according to certain standards, and be registered on the National Data Library in a certain way. The records must be published in <a href="../harvest_data/gemini">GEMINI format</a> and be <a href="../harvest_data">harvested</a>. Common ways to do this are:</p></p>
 
 <ul>
 <li>metadata records</li>
@@ -216,13 +216,13 @@
 
 <h3 id="geographic-information-system-gis">Geographic Information System (GIS)</h3>
 
-<p>You can choose to store data in a GIS (Geographic Information System). This is common for departments and local authorities that have an established geo-spatial data capability. The most commonly used GIS for data.gov.uk is the open source <a href="http://geonetwork-opensource.org/">GeoNetwork</a>, and commercial ones such as ArcGIS are also in use. The GIS provides a &lsquo;WMS service&rsquo; for users to preview the data and &lsquo;WFS service&rsquo; or &lsquo;Atom feed&rsquo; for users to download the data. The GIS also publishes the metadata records for the datasets at a &lsquo;CSW service&rsquo;, which the data.gov.uk directory is then configured to harvest from.</p>
+<p>You can choose to store data in a GIS (Geographic Information System). This is common for departments and local authorities that have an established geo-spatial data capability. The most commonly used GIS for the National Data Library is the open source <a href="http://geonetwork-opensource.org/">GeoNetwork</a>, and commercial ones such as ArcGIS are also in use. The GIS provides a &lsquo;WMS service&rsquo; for users to preview the data and &lsquo;WFS service&rsquo; or &lsquo;Atom feed&rsquo; for users to download the data. The GIS also publishes the metadata records for the datasets at a &lsquo;CSW service&rsquo;, which the directory is then configured to harvest from.</p>
 
 <h2 id="harvesting-metadata-records">Harvesting metadata records</h2>
 
-<p>Getting your metadata records into the data.gov.uk directory is done by <a href="../harvest_data">setting up a data.gov.uk &lsquo;harvester&rsquo;</a>. You should run the harvester regularly to ensure that the directory stays in sync when the publisher updates the records.</p>
+<p>Getting your metadata records into the directory is done by <a href="../harvest_data">setting up a &lsquo;harvester&rsquo;</a>. You should run the harvester regularly to ensure that the directory stays in sync when the publisher updates the records.</p>
 
-<p>Occasionally publishers have made the mistake of using an existing record as a template and simply using a text editor to change the key fields. The main problem with this is that you need to generate a new <code>gmd:fileIdentifier</code>, or data.gov.uk will harvest it and overwrite the record that was the template! To generate a new UUID (universally unique identifier) for this field, just visit <a href="https://www.uuidgenerator.net/">https://www.uuidgenerator.net/</a>.</p>
+<p>Occasionally publishers have made the mistake of using an existing record as a template and simply using a text editor to change the key fields. The main problem with this is that you need to generate a new <code>gmd:fileIdentifier</code>, or the National Data Library will harvest it and overwrite the record that was the template! To generate a new UUID (universally unique identifier) for this field, just visit <a href="https://www.uuidgenerator.net/">https://www.uuidgenerator.net/</a>.</p>
 
             
           </main>

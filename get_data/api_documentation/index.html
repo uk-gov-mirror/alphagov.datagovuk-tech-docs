@@ -108,7 +108,7 @@
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading" data-module="collapsible-navigation">
                       <ul>
   <li>
-    <a href="/"><span>data.gov.uk technical documentation</span></a>
+    <a href="/"><span>National Data Library technical documentation</span></a>
   </li>
 <li><a href="/publish_and_manage_data/"><span>Publish and manage data</span></a>
 <ul>
@@ -171,11 +171,11 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="api-documentation">API documentation</h1>
 
-<p>The data.gov.uk directory API uses the <a href="https://docs.ckan.org/en/2.9/api/index.html">CKAN API and its extensions</a>. <a href="https://data.gov.uk">Curated collections</a> are not yet available via the API. <a href="https://data.gov.uk/roadmap">Check out the roadmap</a> to learn more about upcoming changes to data.gov.uk.</p>
+<p>The directory API uses the <a href="https://docs.ckan.org/en/2.9/api/index.html">CKAN API and its extensions</a>. <a href="https://data.gov.uk">Curated collections</a> are not yet available via the API. <a href="https://data.gov.uk/roadmap">Check out the roadmap</a> to learn more about upcoming changes to the National Data Library.</p>
 
 <p>You do not need an API key to use the API and there are no rate limits.</p>
 
-<p>To call the API, post a JSON dictionary in a HTTP POST request to one of the data.gov.uk API URLs. The base URL for all calls is <code>https://data.gov.uk/api/action/</code>.</p>
+<p>To call the API, post a JSON dictionary in a HTTP POST request to one of the National Data Library API URLs. The base URL for all calls is <code>https://data.gov.uk/api/action/</code>.</p>
 
 <p>In CKAN vocabulary, <code>packages</code> refers to ‘datasets’.</p>
 
@@ -232,7 +232,7 @@
       </div><p>Remember to escape these URLs. Most browsers will escape these automatically when you open these example links, but some clients, such as Python, will mostly need them URL encoded (spaces to <code>%20</code> etc). And on the command-line remember to quote the whole URL, for example use single quotes:</p>
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>curl &#39;https://data.gov.uk/api/action/package_search?fq=organization:peterborough-city-council&#39;
 </code></pre></div><h3 id="get-publisher-information">Get publisher information</h3>
-<p>Data.gov.uk uses CKAN <code>organizations</code> to store what is shown as ‘publishers’ on the frontend.</p>
+<p>The National Data Library directory uses CKAN <code>organizations</code> to store what is shown as ‘publishers’ on the frontend.</p>
 <div class="table-container">
         <table>
           <tr>
@@ -251,7 +251,7 @@
 <td>https://data.gov.uk/api/action/organization_show?id=cabinet-office&amp;include_datasets=false</td>
 </tr>
         </table>
-      </div><p>For requests and questions about a dataset on the <a href="https://data.gov.uk/search">the data.gov.uk directory</a>, you should contact the publisher directly if they’ve provided their contact details next to the dataset.</p></p>
+      </div><p>For requests and questions about a dataset on <a href="https://data.gov.uk/search">the directory</a>, you should contact the publisher directly if they’ve provided their contact details next to the dataset.</p></p>
 
             
           </main>

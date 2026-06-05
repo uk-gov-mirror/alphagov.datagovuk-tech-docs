@@ -108,7 +108,7 @@
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading" data-module="collapsible-navigation">
                       <ul>
   <li>
-    <a href="/"><span>data.gov.uk technical documentation</span></a>
+    <a href="/"><span>National Data Library technical documentation</span></a>
   </li>
 <li><a href="/publish_and_manage_data/"><span>Publish and manage data</span></a>
 <ul>
@@ -171,7 +171,7 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="accepted-dcat-and-data-json-fields">Accepted DCAT and data.json fields</h1>
 
-<p>When using or data.json, it’s common to use additional fields from other vocabularies. This guidance explains the fields that the data.gov.uk directory will accept.</p>
+<p>When using or data.json, it’s common to use additional fields from other vocabularies. This guidance explains the fields that the National Data Library directory will accept.</p>
 
 <div class="table-container">
         <table>
@@ -209,7 +209,7 @@
 <td>dcat:keyword</td>
 <td>data.json: <br> <code>"keyword": {"geochemistry", "geology"}</code> <br> DCAT: <code>&lt;dcat:keyword&gt;geochemistry&lt;/dcat:keyword&gt;</code> <code>&lt;dcat:keyword&gt;geology&lt;/dcat:keyword&gt;</code>
 </td>
-<td>Not displayed by data.gov.uk but helps theme categorization</td>
+<td>Not displayed by the National Data Library but helps theme categorization</td>
 </tr><tr>
 <th scope="row">issued</th>
 <td>dct:issued</td>
@@ -274,7 +274,7 @@
 <td>dcat:theme</td>
 <td>
 <code>http://eurovoc.europa.eu/209416</code> - Police - Eurovoc <br> <code>COFOG/03.1.0</code> Police services - COFOG <br> <code>http://id.esd.org.uk/function/20</code> - Police services - ESD</td>
-<td>Main thematic category of the dataset. Preferably expressed as a URI from a known vocabulary: <br> <a href="http://eurovoc.europa.eu/">Eurovoc</a> <br> <a href="https://github.com/datasets/cofog/blob/master/data/cofog.csv">COFOG</a> <br> <a href="http://standards.esd.org.uk/?uri=list%2Fservices">ESD Service</a>/<a href="http://standards.esd.org.uk/?uri=list%2Ffunctions">Function</a> <br>More than one can be specified using a <code>[]</code> list. <br>NB This field is currently ignored by data.gov.uk - use other fields as described in <a href="theme.html">Themes</a>
+<td>Main thematic category of the dataset. Preferably expressed as a URI from a known vocabulary: <br> <a href="http://eurovoc.europa.eu/">Eurovoc</a> <br> <a href="https://github.com/datasets/cofog/blob/master/data/cofog.csv">COFOG</a> <br> <a href="http://standards.esd.org.uk/?uri=list%2Fservices">ESD Service</a>/<a href="http://standards.esd.org.uk/?uri=list%2Ffunctions">Function</a> <br>More than one can be specified using a <code>[]</code> list. <br>NB This field is currently ignored by the National Data Library - use other fields as described in <a href="theme.html">Themes</a>
 </td>
 </tr>
         </table>
@@ -316,7 +316,7 @@
 <th scope="row">description</th>
 <td>dct:description</td>
 <td></td>
-<td>Not currently displayed on data.gov.uk</td>
+<td>Not currently displayed on the National Data Library</td>
 </tr><tr>
 <th scope="row">format</th>
 <td>dcat:mediaType</td>
@@ -334,7 +334,7 @@
 <td>
 <code>2000-01-15/2000-01-20</code> <code>2010-01/2010-03</code> <code>2010/2010</code>
 </td>
-<td>The date period that the dataset applies to. Formatted as 2 ISO 8601 dates (or datetimes) separated by a slash. If the period in question is a whole year or whole month, put the same value for start and finish, for example <code>2010/2010</code> or <code>2010-06/2010-06</code>. Data.gov.uk only stores the first date of the pair in the &ldquo;date&rdquo; field, and if the 2 dates are different, it adds the range into the &ldquo;name&rdquo; field.</td>
+<td>The date period that the dataset applies to. Formatted as 2 ISO 8601 dates (or datetimes) separated by a slash. If the period in question is a whole year or whole month, put the same value for start and finish, for example <code>2010/2010</code> or <code>2010-06/2010-06</code>. The National Data Library only stores the first date of the pair in the &ldquo;date&rdquo; field, and if the 2 dates are different, it adds the range into the &ldquo;name&rdquo; field.</td>
 </tr><tr>
 <th scope="row">spatial</th>
 <td>dct:spatial</td>
@@ -365,7 +365,7 @@
     </span><span class="err">...</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
-</span></code></pre></div><p>Alternatively, you can put this information inside a catalogue object under the key datasets. Although data.gov.uk does not harvest the catalogue data, allowing this structure gives reasonable compatibility with <a href="https://project-open-data.cio.gov/">Project Open Data</a>.</p>
+</span></code></pre></div><p>Alternatively, you can put this information inside a catalogue object under the key datasets. Although the National Data Library does not harvest the catalogue data, allowing this structure gives reasonable compatibility with <a href="https://project-open-data.cio.gov/">Project Open Data</a>.</p>
 <h2 id="character-encoding">Character encoding</h2>
 <p>The data.json file should have ASCII or UTF-8 character encoding (as per the JSON standard). The harvester now detects this and returns an error if the file is not acceptable.</p>
 <h2 id="namespaces">Namespaces</h2>
