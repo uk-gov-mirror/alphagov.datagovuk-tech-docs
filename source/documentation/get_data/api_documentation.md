@@ -1,10 +1,10 @@
 # API documentation
 
-The data.gov.uk directory API uses the [CKAN API and its extensions](https://docs.ckan.org/en/2.9/api/index.html). [Curated collections](https://data.gov.uk) are not yet available via the API. [Check out the roadmap](https://data.gov.uk/roadmap) to learn more about upcoming changes to data.gov.uk.
+The directory API uses the [CKAN API and its extensions](https://docs.ckan.org/en/2.9/api/index.html). [Curated collections](https://data.gov.uk) are not yet available via the API. [Check out the roadmap](https://data.gov.uk/roadmap) to learn more about upcoming changes to the National Data Library.
 
 You do not need an API key to use the API and there are no rate limits.
 
-To call the API, post a JSON dictionary in a HTTP POST request to one of the data.gov.uk API URLs. The base URL for all calls is `https://data.gov.uk/api/action/`.
+To call the API, post a JSON dictionary in a HTTP POST request to one of the National Data Library API URLs. The base URL for all calls is `https://data.gov.uk/api/action/`.
 
 In CKAN vocabulary, `packages` refers to ‘datasets’.
 
@@ -41,7 +41,7 @@ curl 'https://data.gov.uk/api/action/package_search?fq=organization:peterborough
 
 ### Get publisher information
 
-Data.gov.uk uses CKAN `organizations` to store what is shown as ‘publishers’ on the frontend.
+The National Data Library directory uses CKAN `organizations` to store what is shown as ‘publishers’ on the frontend.
 
 | Parameter                                 | Returns                              | Example URL |
 |-------------------------------------------|--------------------------------------|-------------|
@@ -49,4 +49,4 @@ Data.gov.uk uses CKAN `organizations` to store what is shown as ‘publishers’
 | # `organization_show?id=<PUBLISHER-NAME>` | Information about a single publisher | https://data.gov.uk/api/action/organization_show?id=cabinet-office&include_datasets=false |
 
 
-For requests and questions about a dataset on the [the data.gov.uk directory](https://data.gov.uk/search), you should contact the publisher directly if they’ve provided their contact details next to the dataset.
+For requests and questions about a dataset on [the directory](https://data.gov.uk/search), you should contact the publisher directly if they’ve provided their contact details next to the dataset.

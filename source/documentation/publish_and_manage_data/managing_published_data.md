@@ -11,11 +11,11 @@ Do not create new datasets for data you publish regularly, for example monthly s
 
 ## Unpublishing data
 
-In the interests of transparency, you should not delete datasets from data.gov.uk. Old datasets can help people compare trends over time, track corrections, and see historical data from organisations that do not exist anymore.
+In the interests of transparency, you should not delete datasets from the National Data Library. Old datasets can help people compare trends over time, track corrections, and see historical data from organisations that do not exist anymore.
 
 However, you may want to remove datasets that are:
 
 * duplicates - if there are 2 datasets covering the same data
 * test datasets - if you’ve accidentally published some trial data
 
-Only the data.gov.uk team can delete a dataset. If you want to delete a dataset, [use the support form](https://www.gov.uk/contact/govuk) and mention that it’s about data.gov.uk to send us a request.
+Only the National Data Library team can delete a dataset. If you want to delete a dataset, [use the support form](https://www.gov.uk/contact/govuk) and mention that it’s about the National Data Library or data.gov.uk to send us a request.
