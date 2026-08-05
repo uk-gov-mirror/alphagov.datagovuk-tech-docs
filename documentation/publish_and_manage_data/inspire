@@ -1,45 +1,9 @@
 <h1 id="inspire">INSPIRE</h1>
-<p>INSPIRE places legal obligations on public bodies to publish particular datasets. This requires most UK public bodies (central government, local authorities and all other public authorities as defined in the <a href="http://www.legislation.gov.uk/uksi/2004/3391/contents/made">Environmental Information Regulations 2004</a>) to publish certain datasets.</p>
-<p>Relevant datasets are those which meet all these criteria:</p>
-
-<ul>
-<li>geo-spatial data (the data points contain a location e.g. latitude/longitude or post code etc)</li>
-<li>data that is in any of the <a href="http://inspire.ec.europa.eu/index.cfm/pageid/2/list/7">34 INSPIRE themes</a>, however UK Location encourages all geo-spatial data to be published the INSPIRE way</li>
-<li>existing data (the law does not compel you to collect any data)</li>
-</ul>
-<p>Department for Environment, Food &amp; Rural Affairs (Defra) provides guidance and a helpdesk for INSPIRE queries. Contact the helpdesk at <a href="mailto:UK-INSPIRE-Help@defra.gsi.gov.uk">UK-INSPIRE-Help@defra.gsi.gov.uk</a>.</p>
-<h2 id="examples-inspire-data">Examples INSPIRE data</h2>
-<div class="table-container">
-        <table>
-          <tr>
-<th>Dataset</th>
-<th>INSPIRE?</th>
-<th>Location?</th>
-<th>Explanation</th>
-</tr><tr>
-<th scope="row"><a href="http://data.gov.uk/dataset/water-framework-directive-river-waterbody-catchments-wms">River catchment area boundaries</a>
-</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Its publisher Environment Agency is a government agency, the data falls under the INSPIRE theme &ldquo;Hydrography&rdquo;, and the data is geo-spatial - it can be plotted on a map.</td>
-</tr><tr>
-<th scope="row"><a href="http://data.gov.uk/dataset/road-accidents-safety-data">Road accidents</a>
-</th>
-<td>No</td>
-<td>Yes</td>
-<td>The subject of the data is not covered in the 34 INSPIRE themes so it is not covered by INSPIRE. However the data is Location data - each accident is located using a OS grid reference (and latitude &amp; longitude) so it is geo-spatial. So the publisher could have still published the metadata in GEMINI and provided INSPIRE-style View (WMS) and Download Services (WFS/Atom), but has chosen not to in this case, sticking to basic CSV.</td>
-</tr>
-        </table>
-      </div><p>Local authorities should make use of the detailed guidance from the Local Government Association which lists datasets likely to be held by LAs covered by INSPIRE: <a href="https://www.local.gov.uk/sites/default/files/documents/guide-inspire-compliance--8fe.docx">A Guide to INSPIRE compliance in local government (.docx file)</a>.</p>
-<h2 id="publishing-inspire-location-data">Publishing INSPIRE/Location data</h2>
-<p>The INSPIRE legislation requires most geo-spatial data to be published according to certain standards, and be registered on the National Data Library in a certain way. The records must be published in <a href="../harvest_data/gemini">GEMINI format</a> and be <a href="../harvest_data">harvested</a>. Common ways to do this are:</p>
-
-<ul>
-<li>metadata records</li>
-<li>storing data in a GIS (Geographic Information System)</li>
-</ul>
-<h3 id="geographic-information-system-gis">Geographic Information System (GIS)</h3>
-<p>You can choose to store data in a GIS (Geographic Information System). This is common for departments and local authorities that have an established geo-spatial data capability. The most commonly used GIS for the National Data Library is the open source <a href="http://geonetwork-opensource.org/">GeoNetwork</a>, and commercial ones such as ArcGIS are also in use. The GIS provides a &lsquo;WMS service&rsquo; for users to preview the data and &lsquo;WFS service&rsquo; or &lsquo;Atom feed&rsquo; for users to download the data. The GIS also publishes the metadata records for the datasets at a &lsquo;CSW service&rsquo;, which the directory is then configured to harvest from.</p>
+<p>The <a href="https://www.legislation.gov.uk/uksi/2009/3157/contents">INSPIRE Regulations 2009</a> require UK public bodies (central government, local authorities and all other public authorities, as defined in the <a href="https://www.legislation.gov.uk/ukpga/2000/36/section/3">Freedom of Information Act 2000</a>), to publish data that falls under any of <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-themes_en">the 34 INSPIRE themes</a>.</p>
+<p>Defra is the lead department for the INSPIRE Regulations and enquiries about the legislation should be made to data.governance@defra.gov.uk.</p>
+<h2 id="publishing-inspire-metadata">Publishing INSPIRE metadata</h2>
+<p>INSPIRE data must be registered on the National Data Library and must be published in the default UK government metadata standard for spatial data, which is <a href="https://agiorguk.github.io/gemini/1037-uk-gemini-standard-and-inspire-implementing-rules.html">UK GEMINI</a>. The INSPIRE knowledge base publishes <a href="https://knowledge-base.inspire.ec.europa.eu/data-specifications-technical-guidelines_en">data specifications technical guidelines</a> with further details of how to publish data that falls under the INSPIRE themes to ensure interoperability.</p>
 <h2 id="harvesting-metadata-records">Harvesting metadata records</h2>
 <p>Getting your metadata records into the directory is done by <a href="../harvest_data">setting up a &lsquo;harvester&rsquo;</a>. You should run the harvester regularly to ensure that the directory stays in sync when the publisher updates the records.</p>
 <p>Occasionally publishers have made the mistake of using an existing record as a template and simply using a text editor to change the key fields. The main problem with this is that you need to generate a new <code>gmd:fileIdentifier</code>, or the National Data Library will harvest it and overwrite the record that was the template! To generate a new UUID (universally unique identifier) for this field, just visit <a href="https://www.uuidgenerator.net/">https://www.uuidgenerator.net/</a>.</p>
+<p><em>Last updated: 5 Aug 2026</em></p>
