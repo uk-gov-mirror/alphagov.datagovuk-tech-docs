@@ -110,3 +110,6 @@ To add a new dataset, sign into the [Data Publisher](https://ckan.publishing.ser
 The new data will be added to the existing dataset.
 
 >Each organisation should only have one dataset for spend over £25,000 and another for GPC spend data. Do not create a brand new dataset for each month.
+>
+
+_Last updated: 13 August 2026_
